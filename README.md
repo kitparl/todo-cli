@@ -1,11 +1,11 @@
-## Still in Development
+# Still in Development
 
-# Java TODO CLI Tool 🗒️
+## Java TODO CLI Tool 🗒️
 
 A command-line interface (CLI) application built in Java that helps you manage your daily tasks efficiently through terminal commands. Stay organized and boost your productivity with this lightweight task management tool.
 
 ## Features ✨
-
+<!---
 - Create, read, update, and delete tasks
 - Mark tasks as complete/incomplete
 - List all tasks with their status
@@ -13,14 +13,54 @@ A command-line interface (CLI) application built in Java that helps you manage y
 - Priority-based task management
 - Simple and intuitive command-line interface
 - Data persistence across sessions
-
+-->
 ## Installation 🚀
 
+### Linux Installation
+
+1. Download the File Using curl
+```bash
+curl -L -o todo-cli-1.0-SNAPSHOT.jar https://raw.githubusercontent.com/kitparl/todo-cli/main/target/todo-cli-1.0-SNAPSHOT.jar
+```
+
+2.  Move the JAR File to /usr/local/bin
+```bash
+sudo mv todo-cli-1.0-SNAPSHOT.jar /usr/local/bin/
+```
+
+3. Make the JAR File Executable
+```bash
+sudo chmod +x /usr/local/bin/todo-cli-1.0-SNAPSHOT.jar
+```
+
+4. Add an Alias
+  1. Open the `.bashrc` or `.zshrc` file
+for `bash` users
+  ```bash
+  nano ~/.bashrc
+  ```
+Or for `zsh` users:
+  ```bash
+  nano ~/.bashrc
+  ```
+
+  2. Add this line
+  ```bash
+  alias todo='java -jar /usr/local/bin/todo-cli-1.0-SNAPSHOT.jar'
+  ```
+
+  3. Save the file and then reload the configuration
+  ```bash
+  source ~/.bashrc    # for bash users
+  source ~/.zshrc      # for zsh users
+  ```
+   
 ### Prerequisites
 
 - Java JDK 21 or higher
 - Maven (for building the project)
 
+<!---
 ### Steps
 
 1. Clone the repository
@@ -102,7 +142,7 @@ You can modify the storage location by creating a `config.properties` file in th
 ```properties
 data.directory=/custom/path/to/storage
 ```
-
+-->
 ## Contributing 🤝
 
 Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
