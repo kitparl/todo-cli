@@ -166,12 +166,12 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 If you encounter any issues or have questions, please:
 
-1. Check the [Issues](https://github.com/yourusername/todo-cli/issues) page
+1. Check the [Issues](https://github.com/kitparl/todo-cli/issues) page
 2. Create a new issue if your problem isn't already listed
 3. Provide as much detail as possible in bug reports
 
 ---
 
-Made with ❤️ by [Pranshu Singh Bisht]
+Made with ❤️ by [kitparl](https://github.com/kitparl/)
 
 _Note: Remember to star ⭐ this repository if you find it helpful!_
