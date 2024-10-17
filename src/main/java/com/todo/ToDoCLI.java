@@ -24,6 +24,10 @@ public class ToDoCLI implements Callable<Integer> {
     return 0;
   }
 
+  public static ToDoManager getManager() {
+    return manager;
+  }
+
   @Command(name = "add", description = "Add a new task")
   static class AddCommand implements Callable<Integer> {
     @Parameters(paramLabel = "<description>", description = "Description of the task")
@@ -126,17 +130,6 @@ public class ToDoCLI implements Callable<Integer> {
       }
       System.out.println("Task not found.");
       return 1;
-    }
-  }
-
-  public static void main(String[] args) {
-    try {
-      int exitCode = new CommandLine(new ToDoCLI()).execute(args);
-      manager.saveTasks();
-      System.exit(exitCode);
-    } catch (Exception e) {
-      e.printStackTrace();
-      System.exit(1);
     }
   }
 }
