@@ -1,10 +1,4 @@
-com/todo/ToDoCLI$DeleteCommand.class
-com/todo/ToDoCLI$AddCommand.class
 com/todo/ToDoManager.class
-com/todo/ToDoCLI.class
 com/todo/ToDoManager$1.class
-com/todo/ToDoCLI$CompleteCommand.class
-com/todo/ToDoCLI$ListCommand.class
 com/todo/Task.class
-com/todo/ToDoCLI$EditCommand.class
 com/todo/LocalDateTimeAdapter.class
